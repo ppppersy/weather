@@ -32,8 +32,7 @@ export class LocationService {
       }
       console.log(result[0].formatted_address);
       return result[0].formatted_address;
-    })
-
+    });
   }
 
 }
