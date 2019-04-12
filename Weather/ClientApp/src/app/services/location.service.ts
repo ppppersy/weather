@@ -13,14 +13,15 @@ export class LocationService {
 
   nameToGeo(city: string) {
     var goecoder = new google.maps.Geocoder;
-    return goecoder.geocode({"address": city}, function(result) {
+    let geoInfo;
+    goecoder.geocode({"address": city}, function(result) {
       if(result.length !== 1) {
         alert('nameToGeo returned ' + +result.length + 'city info');
       }
-      let latlng = result[0].geometry.location.toString();
-      console.log(latlng);
-      return latlng;
+      geoInfo = result[0].geometry.location.toJSON();
+      console.log(geoInfo);
     });
+    return geoInfo;
   }
 
   geoToName(geo: [string, string]) {
