@@ -1,0 +1,5 @@
+Dark Sky secret key: 49a18ee5b89e4d82de0a9e79acab00a1
+
+Google Map api key: AIzaSyD_grXdR0z9Id1wztqmXVqeKmmEVRMS0lE
+
+Google Map api key: AIzaSyCbzxibtnUXM1b8WOfglzdp4QOAeskN8mI(red)
